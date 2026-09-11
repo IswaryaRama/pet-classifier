@@ -140,7 +140,3 @@ Prediction: cats
 - This dataset is intentionally small for fast experimentation, so expect accuracy in the ~65–75% range rather than state-of-the-art results.
 - To improve accuracy: use more training data, add stronger augmentation, or switch to transfer learning with a pretrained model (e.g. MobileNetV2) instead of training a CNN from scratch.
 - GPU acceleration is not available on native Windows for TensorFlow 2.11+. Training runs on CPU unless you use WSL2 or the TensorFlow-DirectML plugin.
-
-## License
-
-MIT (or update to your preferred license)
