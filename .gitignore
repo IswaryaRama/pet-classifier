@@ -1,0 +1,8 @@
+dataset/
+catsdogs_small.zip
+test.jpg
+pet_model.keras
+__pycache__/
+*.pyc
+venv/
+.DS_Store
