@@ -95,6 +95,13 @@ pet-classifier/
 
 ## Training
 
+To create a `test.jpg` for a quick sanity check:
+
+```powershell
+$file = Get-ChildItem dataset\test\cats | Select-Object -First 1
+Copy-Item $file.FullName "test.jpg"
+```
+
 Run the training script:
 
 ```bash
@@ -107,12 +114,6 @@ This will:
 - Save the trained model as `pet_model.keras`
 - Predict the class of `test.jpg` (make sure this file exists — see below)
 
-To create a `test.jpg` for a quick sanity check:
-
-```powershell
-$file = Get-ChildItem dataset\test\cats | Select-Object -First 1
-Copy-Item $file.FullName "test.jpg"
-```
 
 ## Predicting new images
 
